@@ -1,0 +1,48 @@
+body {
+    margin: 0 auto;
+    padding: 150px 190px;
+
+    background-color: $bg;
+
+    position: relative;
+
+    font-family: $mainFont, $baseFont;
+    font-weight: 500;
+    color: $accent;
+}
+
+header {
+    margin-top: 40px;
+    margin-left: 40px;
+
+    position: absolute;
+}
+
+main {
+    min-height: 900px;
+    max-width: 1500px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bg-img {
+    width: 100%;
+    height: 1000px;
+    background-image: url('./../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    padding: 60px 60px;
+    background-color: $bgContent;
+    max-width: 682px;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.092);
+}
+
+.bg-img[hidden] {
+    display: block;
+}

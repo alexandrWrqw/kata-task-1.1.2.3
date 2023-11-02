@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap");
+body {
+  margin: 0 auto;
+  padding: 150px 190px;
+  background-color: #EFF6FF;
+  position: relative;
+  font-family: "Barlow", sans-serif, "Arial", sans-serif;
+  font-weight: 500;
+  color: #2A4A5C;
+}
+
+header {
+  margin-top: 40px;
+  margin-left: 40px;
+  position: absolute;
+}
+
+main {
+  min-height: 900px;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bg-img {
+  width: 100%;
+  height: 1000px;
+  background-image: url("./../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  padding: 60px 60px;
+  background-color: #FFF;
+  max-width: 682px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.092);
+}
+
+.bg-img[hidden] {
+  display: block;
+}
+
+h1.title {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+p.info-text:first-of-type {
+  font-size: 1.2em;
+  color: #7B8A92;
+}
+
+.text-or {
+  display: flex;
+  justify-content: center;
+}
+.text-or span {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.text-or span::before, .text-or span::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.107);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 12px;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.cta > *:first-child {
+  margin-right: 40px;
+}
+
+.input-title {
+  position: absolute;
+  z-index: 2;
+  padding: 6px 12px;
+  color: #AFAFAF;
+}
+
+h2.subtitle {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+p.info-text:nth-of-type(2) {
+  font-size: 1.1em;
+  color: #7B8A92;
+}
+
+.checkbox-container {
+  margin: 40px 0;
+}
+.checkbox-container > * {
+  margin-right: 65px;
+}
+
+.investor-info {
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.123);
+  width: 260px;
+  padding: 1px 15px;
+}
+
+.investor-info p {
+  color: #AFAFAF;
+}
+
+.checkbox-agreement {
+  margin: 50px 0;
+  color: #AFAFAF;
+}
+.checkbox-agreement a {
+  color: #3698FB;
+}
+
+.cta input {
+  padding: 30px 75px 12px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.107);
+  font-size: 18px;
+  outline: none;
+  font-family: "Barlow", sans-serif;
+}
+.cta input:focus {
+  border-left: 2px solid #3698FB;
+  margin-left: -1px;
+}
+
+.checkbox-container input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #AFAFAF;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.checkbox-container input:checked {
+  border: 4px solid #3698FB;
+}
+
+input.submit-but {
+  background-color: #3698FB;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+button {
+  padding: 15px 70px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.buttons {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons .reg-facebook {
+  background-color: #255A9B;
+  position: relative;
+}
+.buttons .reg-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./../img/facebook.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 11px;
+  left: 15px;
+}
+.buttons .reg-facebook:hover {
+  background-color: #3275c8;
+  cursor: pointer;
+}
+.buttons .reg-linkedin {
+  background-color: #0076B6;
+  position: relative;
+}
+.buttons .reg-linkedin::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./../img/linkedin.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 11px;
+  left: 15px;
+}
+.buttons .reg-linkedin:hover {
+  background-color: rgb(33, 86, 151);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  section {
+    padding: 30px 60px;
+  }
+  header {
+    position: unset;
+    margin: 0;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo-svg {
+    fill: #2A4A5C;
+    width: 220px;
+    height: 50px;
+  }
+  .bg-img[hidden] {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+@media screen and (max-width: 1500px) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    section {
+        padding: 30px 60px;
+    }
+
+    header {
+        position: unset;
+        margin: 0;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo-svg {
+        fill: $accent;
+        width: 220px;
+        height: 50px;
+    }
+
+    .bg-img[hidden] {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+.cta input {
+    padding: 30px 75px 12px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.107);
+    font-size: 18px;
+    outline: none;
+    font-family: $mainFont;
+
+    &:focus {
+        border-left: 2px solid #3698FB;
+        margin-left: -1px
+    }
+}
+
+.checkbox-container input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $low;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+
+    &:checked {
+        border: 4px solid #3698FB;
+    }
+}
+
+input.submit-but {
+    background-color: #3698FB;
+    padding: 15px 70px;
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
