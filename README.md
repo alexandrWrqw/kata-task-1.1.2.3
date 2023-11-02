@@ -1,1 +1,1 @@
-# kata.task
+# kata.task https://alexandrwrqw.github.io/kata.task/
