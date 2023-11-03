@@ -16,6 +16,7 @@ button {
     & .reg-facebook {
         background-color: #255A9B;
         position: relative;
+        border: 1px solid rgba(0, 0, 0, 0);
 
         &::before {
             content: '';
@@ -34,11 +35,18 @@ button {
             background-color: #3275c8;
             cursor: pointer;
         }
+
+        &:focus {
+            outline: none;
+            background-color: #3275c8;
+            border: 1px solid #2A4A5C;
+        }
     }
 
     & .reg-linkedin {
         background-color: #0076B6;
         position: relative;
+        border: 1px solid rgba(0, 0, 0, 0);
 
         &::before {
             content: '';
@@ -54,8 +62,14 @@ button {
         }
 
         &:hover {
-            background-color: rgb(33, 86, 151);
+            background-color: #0095e6;
             cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+            background-color: #0095e6;
+            border: 1px solid #2A4A5C;
         }
     }
 }
